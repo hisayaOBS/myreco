@@ -33,4 +33,8 @@ def create_user_record(db: Session, record: schemas.RecordCreate, user_id: int):
     db.add(db_record)
     db.commit()
     db.refresh(db_record)
+<<<<<<< HEAD
+=======
+    print(type(db_record.inputday))
+>>>>>>> 84ef388abdba56253cd3ebaf99b747f3f2d457e7
     return db_record
